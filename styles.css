@@ -1,51 +1,82 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #222;
+    background-color: #3B4664;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    
+    margin: 0 auto;
+    width: 550px;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    
+
 }
 h1 {
-   font-size: 40px;
-   color: #fff;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
 }
 
 .calculator {
-    border: 1px solid #ccc;
+    
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px; 
+    background-color: #252C45;
+    border: none;
+    
 }
 
 #display {
-    width: 90%;
-    margin-bottom: 10px;
+    
+    width: 100%;
+    box-sizing: border-box;
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 600;
     text-align: right;
+    background-color: #181F32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 button {
+    flex: 1 0 21%;
+    margin: 5px;
     padding: 10px;
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
     cursor: pointer;
+    border: none;
+    
 }
+
+#jeenako{
+    background-color: #D13F30;
+    color: white;
+}
+#reset, #del {
+    background-color: #647299;
+    color:white;
+    
+}
+
 
 button:hover {
     background-color: #f1f1f1;
